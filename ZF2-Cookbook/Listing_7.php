@@ -1,0 +1,1 @@
+<?phpnamespace Zhorty\Model;use Zend\Db\TableGateway\AbstractTableGateway;use Zend\Db\Adapter\Adapter;class Trim extends AbstractTableGateway{    public function setDbAdapter(Adapter $adapter) {        $this->adapter = $adapter;    }        public function setTableName($table) {        $this->table = $table;    }}

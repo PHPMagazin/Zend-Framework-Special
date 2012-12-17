@@ -1,0 +1,1 @@
+public function getServiceConfig(){    return array(        'factories' => array(            'Zhorty\Form\Trim' => function($sm) {                $form = new Form\Trim();                $form->setInputFilter(new Form\TrimFilter());                return $form;            },        ),    );}

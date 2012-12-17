@@ -1,0 +1,1 @@
+public function getOrigUriByTrimPath($trimPath) {    $rowset = $this->select(array(        'trim_path' => $trimPath,    ));    $entity = $rowset->current();    if (!$entity) {        throw new \Exception("Could not find row for trim path [$trimPath]");    }    return $entity->getOrigUrl();}

@@ -1,0 +1,1 @@
+public function setEntityHydrator(Hydrator $entityHydrator){    $this->entityHydrator = $entityHydrator;}    public function save(\Zhorty\Entity\Trim $entity) {    $this->entity = $entity;    $set = $this->entityHydrator->extract($entity);    return parent::insert($set);}

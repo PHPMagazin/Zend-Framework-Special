@@ -1,0 +1,1 @@
+public function deleteAction(){    $routeMatch = $this->getEvent()->getRouteMatch();    $id = $routeMatch->getParam('id');            $sm = $this->getServiceLocator();    $model = $sm->get('Zhorty\Model\Trim');            $model->delete(array("id = $id"));            return $this->redirect()->toRoute('zhorty-trim/zhorty-trim-list');} 

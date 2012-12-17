@@ -1,0 +1,1 @@
+'zhorty-trim-delete' => array(    'type'    => 'Segment',    'options' => array(        'route'    => '/delete/[:id]',        'defaults' => array(            'action' => 'delete',         ),         'constraints' => array(             'id' => '[0-9]+',         ),     ), ),

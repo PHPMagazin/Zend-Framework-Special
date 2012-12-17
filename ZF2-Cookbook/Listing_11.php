@@ -1,0 +1,1 @@
+<?phpnamespace Zhorty\Controller;use Zend\Mvc\Controller\AbstractActionController;use Zend\View\Model\ViewModel;class TrimController extends AbstractActionController{    public function indexAction()    {        $sm = $this->getServiceLocator();        $form = $sm->get('Zhorty\Form\Trim');        return new ViewModel(array('form' => $form));    }}

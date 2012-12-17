@@ -1,0 +1,1 @@
+<?phpreturn array(	'controllers' => array(        'invokables' => array(            'Zhorty\Controller\Trim' => 'Zhorty\Controller\TrimController'        ),    ),        );
