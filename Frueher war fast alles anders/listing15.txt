@@ -1,0 +1,23 @@
+    public function getServiceConfig()
+    {
+        return array(
+            'invokables' => array(
+                'Honk\Service\RandomName' => 'Honk\Service\RandomName',
+            ),
+        );
+    }
+    
+    public function getViewHelperConfig()
+    {
+        return array(
+            'factories' => array(
+                'RandomName' => function ($sm) {
+                    $service = $sm->getServiceLocator()->get('Honk\Service\RandomName');
+                    $helper  = new RandomName($service);
+                    
+                    return $helper;
+                },
+            ),
+        );
+    }
+

@@ -1,0 +1,18 @@
+cd /home/devhost/zf2phpmagazin/module/
+
+mkdir Honk
+cd Honk/
+
+mkdir config
+mkdir src
+mkdir src/Honk
+mkdir src/Honk/Controller
+mkdir view
+mkdir view/honk
+mkdir view/honk/index
+
+touch config/module.config.php
+touch src/Honk/Controller/IndexController.php
+touch view/honk/index/index.phtml
+touch Module.php
+

@@ -1,0 +1,12 @@
+Loading composer repositories with package information
+Installing dependencies
+  - Installing zendframework/zendframework (2.0.2)
+    Downloading: 100%         
+
+zendframework/zendframework suggests installing doctrine/common (Doctrine\Common >=2.1 for annotation features)
+zendframework/zendframework suggests installing pecl-weakref (Implementation of weak references for Zend\Stdlib\CallbackHandler)
+zendframework/zendframework suggests installing zendframework/zendpdf (ZendPdf for creating PDF representations of barcodes)
+zendframework/zendframework suggests installing zendframework/zendservice-recaptcha (ZendService\ReCaptcha for rendering ReCaptchas in Zend\Captcha and/or Zend\Form)
+Writing lock file
+Generating autoload files
+

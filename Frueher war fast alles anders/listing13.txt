@@ -1,0 +1,15 @@
+<?php
+namespace Honk\Service;
+
+class RandomName
+{
+    protected $_names = array(
+        'Ralf', 'Thomas', 'Nils', 'Dankwart', 'Herkules', 'Klapskalli', 'Honk',
+    );
+    
+    public function get()
+    {
+        return $this->_names[array_rand($this->_names)];
+    }
+}
+

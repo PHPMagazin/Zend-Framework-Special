@@ -1,0 +1,5 @@
+<div class="hero-unit">
+    <h1>Honk</h1>
+    <p>Hey Foo, was willst du denn so früh an der <?php echo $foo; ?>?</p>
+</div>
+

@@ -1,0 +1,58 @@
+<?php
+namespace Honk\View\Helper;
+
+use Honk\Service\RandomName as RandomNameService;
+use Zend\Form\View\Helper\AbstractHelper;
+
+class RandomName extends AbstractHelper
+{
+    /**
+     * RandomNameService
+     *
+     * @var RandomNameService
+     */
+    protected $randomNameService;
+
+    /**
+     * Constructor
+     *
+     * @param  RandomNameService $randomNameService
+     */
+    public function __construct(RandomNameService $randomNameService)
+    {
+        $this->setRandomNameService($randomNameService);
+    }
+
+    /**
+     * Sets RandomNameService
+     *
+     * @param  RandomNameService $randomNameService
+     * @return AbstractHelper
+     */
+    public function setRandomNameService(RandomNameService $randomNameService = null)
+    {
+        $this->randomNameService = $randomNameService;
+        return $this;
+    }
+    
+    /**
+     * Returns RandomNameService
+     *
+     * @return RandomNameService
+     */
+    public function getRandomNameService()
+    {
+        return $this->randomNameService;
+    }
+    /**
+     * Outputs message depending on flag
+     *
+     * @return string 
+     */
+    public function __invoke()
+    {
+        // return random name
+        return $this->getRandomNameService()->get();
+    }
+}
+

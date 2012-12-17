@@ -1,0 +1,5 @@
+<div class="hero-unit">
+    <h1>Hey <?php echo $this->randomName(); ?></h1>
+    <p>Was willst du denn so früh an der <?php echo $foo; ?>?</p>
+</div>
+
